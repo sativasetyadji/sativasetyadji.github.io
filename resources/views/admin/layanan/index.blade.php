@@ -75,27 +75,6 @@
                         <td>{{ $pengunjungs ->jams['jam'] }}</td>
                     </tr>
                     @endforeach
-                        {{-- @foreach ($pengunjungs as $item)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $item ->jenispajaks['jenis']}}</td>
-                        <td>{{ $item ->kec }}</td>
-                        <td>{{ $item ->nop }}</td>
-                        <td>{{ $item ->jenislayanans['layanan'] }}</td>
-                        <td>{{ $item ->tanggal }}</td>
-                        <td>{{ $item ->jams['kode']}}</td>
-                        <td>{{ $item ->jams['jam']}}</td>
-                        <td class="text-center">
-                            <form action="{{ url('jenislayanans/'.$item->id) }}" method="post" class="d-inline" onsubmit="return confirm('Yakin Hapus Data?')">
-                            @method('delete')
-                            @csrf
-                            <button class="btn btn-danger btn-sm">
-                                <i class="fa fa-trash"></i> Hapus
-                            </button>
-                        </form>
-                        </td>
-                    </tr>
-                    @endforeach --}}
                     </tbody>
                   </table>
                   <div class="pull-right">

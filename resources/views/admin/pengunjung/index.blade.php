@@ -63,25 +63,6 @@
                     </tr>
                     </thead>
                     <tbody>
-                        {{-- @foreach ($pengunjungs as $item) 
-                    <tr>
-                        <td >{{$loop->iteration}}</td>
-                        <td>{{ $item ->nik }}</td>
-                        <td>{{ $item ->nama }}</td>
-                        <td>{{ $item ->status }}</td>
-                        <td>{{ $item ->email }}</td>
-                        <td>{{ $item ->notelp }}</td>
-                        <td class="text-center">
-                            <form action="{{ url('pengunjungs/'.$item->id) }}" method="post" class="d-inline" onsubmit="return confirm('Yakin Hapus Data?')">
-                            @method('delete')
-                            @csrf
-                            <button class="btn btn-danger btn-sm">
-                                <i class="fa fa-trash"></i> Hapus
-                            </button>
-                        </form>
-                        </td>
-                    </tr>
-                    @endforeach --}}
                         @foreach ($pengunjungs as $key=> $pengunjungs) 
                     <tr>
                         <th scope="row">{{ ++$key }}</th>

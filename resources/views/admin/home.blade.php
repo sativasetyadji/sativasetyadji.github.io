@@ -47,19 +47,6 @@
                                             <div class="progress progress-xs mt-3 mb-0 bg-light" style="width: 40%; height: 5px;"></div>
                                         </div>
                                     </div>
-                                    
-                                    {{-- <div class="card col no-padding no-shadow">
-                                        <div class="card-body bg-flat-color-3">
-                                            <div class="h1 text-right mb-4">
-                                                <i class="fa fa-bars text-light"></i>
-                                            </div>
-                                            <div class="h1 mb-0 text-light">
-                                                <span class="count"></span>
-                                            </div>
-                                            <h4 class="text-light text-uppercase font-weight-bold">Jenis Pelayanan</small>
-                                            <div class="progress progress-xs mt-3 mb-0 bg-light" style="width: 40%; height: 5px;"></div>
-                                        </div>
-                                    </div> --}}
                                     <div class="card col no-padding no-shadow">
                                         <div class="card-body bg-flat-color-4">
                                             <div class="h1 text-light text-right mb-4">
