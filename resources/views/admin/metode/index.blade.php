@@ -89,12 +89,14 @@
                                          var s = server.value;
 
                                         //  hitung p
-                                         var p = ld/(m*s);
-                                         hasilp.innerHTML = Math.round(`${p}`);
+                                         var p = ld/(m*s)
+                                         var p1 = Math.round(p)
+                                         hasilp.innerHTML = `${p1}`;
 
                                         //  hitung po
-                                         var po = (1-p)
-                                         hasilpo.innerHTML = Math.round(`${po*60}`);
+                                         var po = 1-p
+                                         var po1 = Math.round(po*60) 
+                                         hasilpo.innerHTML = `${po1} menit`;
 
                                         // hitung lq
                                          var f = 1
@@ -104,19 +106,23 @@
                                          var b = po*(Math.pow((ld/m), s))*p
                                          var  c = f*(Math.pow((1-p), 2))
                                          var lq = b/c
-                                         hasillq.innerHTML = Math.round(`${lq}`);
+                                         var lq1 = Math.round(lq)
+                                         hasillq.innerHTML = `${lq1} orang`;
 
                                          // hitung wq
-                                         var wq = lq/ld
-                                         hasilwq.innerHTML = Math.round(`${wq*60}`); 
+                                         var wq = (lq/ld)
+                                         var wq1 = Math.round(wq*60)  
+                                         hasilwq.innerHTML = `${wq1} menit`; 
 
                                          // hitung w
                                          var w = wq+(1/m)
-                                         hasilw.innerHTML = Math.round(`${w*60}`);
+                                         var w1 = Math.round(w*60) 
+                                
+                                         hasilw.innerHTML = `${w1} menit`;
 
                                          // hitung l
-                                         var  l = ld*w
-                                         hasill.innerHTML = Math.round(`${l}`);
+                                         var  l = Math.round(ld*w) 
+                                         hasill.innerHTML = `${l} orang`;
 
                                      })
 

@@ -22,9 +22,9 @@
             <h1 class="text-center"> Silahkan screenshoot nomor antrian anda</h1>
              <div class="form-group" method="post">
                @csrf
-               <h1 class="text-center">{{ request()->kode}}</h1>
-                <h3 class="text-center">{{ request()->jam}}</h3>
-                <h3 class="text-center">{{ request()->tanggal}}</h3>
+               <h1 class="text-center"><b>{{ request()->kode}}</b></h1>
+                <h3 class="text-center"><b>{{ request()->jam}}</b></h3>
+                <h3 class="text-center"><b>{{ request()->tanggal}}</b></h3>
                 </div>
                 <h3 class="text-center">Silahkan datang 30 menit sebelum waktu antrian anda, Terima Kasih</h3>
                   <div class="card-body">
