@@ -8,19 +8,19 @@
         <div class="step-one">
                     <div class="form-section">
                         <label class="label">NIK</label>
-                        <input class="form-control" type="number" name="nik" wire:model="nik" autofocus>
-                        <span class="text-danger">@error('nik'){{ $message }}@enderror </span>
+                        <input class="form-control" type="number" name="nik" wire:model="nik" autofocus required>
+                        <span class="text-danger">@error('nik'){{ $message }}@enderror</span>
                     </div>
 
                     <div class="form-section">
                         <label class="label">Nama</label>
-                        <input  class="form-control" type="text" name="nama" wire:model="nama" >
+                        <input  class="form-control" type="text" name="nama" wire:model="nama" required>
                         <span class="text-danger">@error('nama'){{ $message }}@enderror</span>
                     </div>
 
                     <div class="form-section">
                         <label class="label">Status Pengunjung</label>
-                        <select class="form-control" wire:model="status">
+                        <select class="form-control" wire:model="status" required>
                             <option selected>Pilih</option>
                             <option value="wajib pajak">Wajib Pajak</option>
                             <option value="kuasa">Kuasa</option>
@@ -31,13 +31,13 @@
 
                     <div class="form-section"> 
                         <label class="label">Email</label>
-                        <input class="form-control" type="email" name="email" wire:model="email">
+                        <input class="form-control" type="email" name="email" wire:model="email" required>
                         <span class="text-danger">@error('email'){{ $message }}@enderror</span>
                     </div>
 
                     <div class="form-section">
                         <label class="label">No Telp</label>
-                        <input class="form-control" type="number" name="notelp" wire:model="notelp">
+                        <input class="form-control" type="number" name="notelp" wire:model="notelp" required>
                         <span class="text-danger">@error('notelp'){{ $message }}@enderror</span>
                     </div>
         </div>
@@ -48,7 +48,7 @@
 
                     <div class="form-section">
                         <label class="label">Jenis Pajak</label>
-                        <select class="form-control" wire:model="jenisId" autofocus>
+                        <select class="form-control" wire:model="jenisId" autofocus required>
                             <option selected>Pilih</option>
                             @foreach ($jenispajaks as $item)
                             <option value="{{ $item->id }}">{{ $item->jenis }}</option>
@@ -59,7 +59,7 @@
 
                     <div class="form-section">
                         <label class="label">Jenis Layanan</label>
-                        <select class="form-control" wire:model="layananId">
+                        <select class="form-control" wire:model="layananId" required>
                             <option selected>Pilih</option>
                             @foreach ($jenislayanans as $item)
                             <option value="{{ $item->id }}">{{ $item->layanan }}</option>
@@ -70,25 +70,25 @@
 
                     <div class="form-section">
                         <label class="label">Kecamatan</label>
-                            <input class="form-control" type="text" name="kec" wire:model="kec">
+                            <input class="form-control" type="text" name="kec" wire:model="kec" required>
                             <span class="text-danger">@error('kec'){{ $message }}@enderror</span>
                     </div>
 
                     <div class="form-section">
                         <label class="label">Nomor Objek Pajak</label>
-                            <input class="form-control" type="number" name="nop" wire:model="nop">
+                            <input class="form-control" type="number" name="nop" wire:model="nop" required>
                             <span class="text-danger">@error('nop'){{ $message }}@enderror</span>
                     </div>
 
                     <div class="form-section">
                         <label class="label">Tanggal Kunjungan</label>
-                            <input class="form-control" type="date" wire:model="tanggal">
+                            <input class="form-control" type="date" wire:model="tanggal" required>
                             <span class="text-danger">@error('tanggal'){{ $message }}@enderror</span>
                     </div>
 
                     <div class="form-section">
                         <label class="label">Waktu Kunjungan</label>
-                        <select class="form-control" wire:model="jamId">
+                        <select class="form-control" wire:model="jamId" required>
                             <option selected>Pilih</option>
                             @foreach ($jams as $item)
                             <option value="{{ $item->id }}">{{ $item->jam }}</option>

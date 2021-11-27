@@ -5,7 +5,7 @@
     <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="/">BPPRD Kota Bandar Lampung</a></h1>
+      <h5 class="logo"><a href="/"><p>BPPRD</p> <small>Kota Bandar Lampung</small></a></h5>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -29,13 +29,13 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
 
-  <div class="container">
-    <div class="row">
+  <div class="container" >
+    <div class="row ">
       <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
        
-        <h1>Booking Antrian Online</h1>
-        <h2>Selamat Datang wajib pajak, Sekarang anda bisa ambil nomor antrian kapan pun dan dimana pun</h2>
-        <div class="d-flex">
+        <h1 class="pt-5">Booking Antrian Online</h1>
+        <h5 class="mt-3">Selamat Datang wajib pajak, Sekarang anda bisa ambil nomor antrian kapan pun dan dimana pun</h5>
+        <div class="d-flex mt-5">
           <a href="{{url ('formregis') }}" class="btn-get-started scrollto">Daftar Sekarang</a></div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 hero-img">
