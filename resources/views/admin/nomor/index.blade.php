@@ -55,7 +55,7 @@
                                         <option value="{{ $item->id }}">{{ $item->jenis }}</option>
                                         @endforeach
                                       </select>
-                                    <button class="btn btn-primary" type="submit">GET</button>
+                                    <button class="btn btn-primary" type="submit">Search</button>
                                 </div>
                             </form>
                         </div>

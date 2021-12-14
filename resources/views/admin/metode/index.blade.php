@@ -32,27 +32,40 @@
                             </div>
                         </div>
                         <div class="card-body">
+                            <div class="my-2">
+                                <form action="metode" method="GET">
+                                    <div class="input-group mb-3">
+                                        <input type="date" class="form-control" name="start_date">
+                                        <button class="btn btn-primary" type="submit">Search</button>
+                                    </div>
+                                </form>
+                            </div>
                             <div class="card-body">
                                 
                                 <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                                     <div class="col">
+                                            <label>Jumlah Pengunjung</label>
+                                            <input id="lamda"  class="form-control" value="{{ $jumlah}}"><br>
+                                    </div>
+                                    {{-- <div class="col">
                                         <div class="form-group">
-                                            <label>Jumlah Pelanggan</label>
-                                            <input type="number"  id="lamda" class="form-control"autofocus>
+                                            <label>Lama Pelayanan</label>
+                                            <input type="number" id="lamda"  class="form-control" autofocus>
+                                        </div>
+                                    </div> --}}
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label>Jumlah Loket</label>
+                                            <input id="server" class="form-control" value="4"><br>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group">
                                             <label>Lama Pelayanan</label>
-                                            <input type="number" id="miu"  class="form-control">
+                                            <input type="number" id="miu"  class="form-control" autofocus>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <label>Jumlah Loket</label>
-                                            <input type="number" id="server" class="form-control">
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                     <button id="button" class="btn btn-success pull-right">Hitung</button>
                             
@@ -79,6 +92,8 @@
                                         </tbody>
                                       </table>
                                      <script type="text/javascript">
+                                     var lamda = document.getElementById("lamda")
+                                     var miu = document.getElementById("miu")
                                      var server = document.getElementById("server")
                                      var button = document.getElementById("button")
                                      

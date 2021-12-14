@@ -45,7 +45,7 @@
                             <form action="jenislayanans" method="GET">
                                 <div class="input-group mb-3">
                                     <input type="date" class="form-control" name="start_date">
-                                    <button class="btn btn-primary" type="submit">GET</button>
+                                    <button class="btn btn-primary" type="submit">Search</button>
                                 </div>
                             </form>
                         </div>

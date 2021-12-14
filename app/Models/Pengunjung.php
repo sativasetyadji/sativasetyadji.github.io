@@ -22,5 +22,10 @@ class Pengunjung extends Model
         return $this->belongsTo('App\Models\Jenislayanan', 'layananId');
     }
 
+    public function metode()
+    {
+        return $this->belongsTo('App\Models\Metode');
+    }
+
     protected $guarded = [];
 }
