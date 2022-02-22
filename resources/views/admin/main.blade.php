@@ -59,6 +59,7 @@
         <header id="header" class="header">
             <div class="header-menu">
                 <div class="col-sm">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
                     <div class="nav-item-user dropdown float-right">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                            Hello, {{ Auth::user()->username }}
